@@ -1,0 +1,73 @@
+.inputContainer {
+  margin: auto;
+  margin-top: -4.5%;
+  border-radius: 6px;
+  background-color: var(--color-dark-grey);
+  width: 70%;
+  padding: var(--size-4);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  font-size: var(--size-6);
+  min-height: 18rem;
+  max-height: 18rem;
+  color: var(--color-light-grey);
+}
+
+.inputContainer h3 {
+  margin-top: -0.01rem;
+}
+
+.input {
+  padding: var(--size-6);
+  margin: auto;
+  border: 0;
+  border-bottom: 2px solid #000;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.2);
+  width: 85%;
+  font-size: var(--size-10);
+}
+
+.input::placeholder {
+  text-align: center;
+  font-size: var(--size-8);
+}
+
+.logo {
+  max-height: 15rem;
+  margin-top: 13rem;
+  margin-left: 0.7rem;
+  padding: 1.5rem;
+}
+
+.btn {
+  font: inherit;
+  cursor: pointer;
+  font-size: var(--size-10);
+  background-color: var(--color-med-grey);
+  border: 1px solid var(--color-primary-700);
+  padding: var(--size-2) var(--size-4);
+  border-radius: 4px;
+  color: var(--color-light-grey);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  margin: 1.3rem 0.5rem 0 0.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: -10rem;
+}
+
+.header p {
+  font-size: 12rem;
+  color: #E900B8;
+  font-weight: 900;
+}
+
+.headerEnd {
+  margin-left: -1%
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}

@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment, useState } from "react";
+import InputContainer from "./components/InputContainer";
+import OutputContainer from "./components/OutputContainer";
 
 function App() {
+  const [formData, setFormData] = useState("");
+  const [cutString, setCutString] = useState([]);
+  const [toggleAnimation, setToggleAnimation] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <InputContainer
+        setCutString={setCutString}
+        formData={formData}
+        setFormData={setFormData}
+        setToggleAnimation={setToggleAnimation}
+      />
+      <OutputContainer
+        cutString={cutString}
+        formData={formData}
+        toggleAnimation={toggleAnimation}
+      />
+    </Fragment>
   );
 }
 

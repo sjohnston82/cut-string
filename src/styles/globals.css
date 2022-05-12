@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 0.75rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-6: 1.5rem;
+  --size-8: 2rem;
+  --size-10: 2.5rem;
+  --size-12: 3rem;
+  --size-16: 4rem;
+  --size-20: 5rem;
+  --size-40: 10rem;
+
+  --color-light-grey: hsl(265, 55%, 96%);
+  --color-med-grey: hsl(265, 4%, 31%);
+  --color-dark-grey: hsl(280, 5%, 13%);
+  
+  margin: 0;
+  background-color: black;
+  color: var(--color-light-grey);
+  font-family: "Roboto", sans-serif;
+}
+
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}

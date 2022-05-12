@@ -1,0 +1,93 @@
+@keyframes disappearAnimation{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes reappearAnimation{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+div {
+  text-align: center;
+}
+
+.container {
+  margin: var(--size-8) auto;
+  border-radius: 6px;
+  background-color: var(--color-dark-grey);
+  width: 70%;
+  padding: var(--size-4);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  font-size: var(--size-6);
+  min-height: 35rem;
+  max-height: 35rem;
+  color: var(--color-light-grey);
+}
+
+p {
+  text-align: center;
+}
+
+.output {
+  font-size: var(--size-20);
+  animation-name: reappearAnimation;
+  animation-duration: 2500ms;
+  animation-fill-mode: forwards;
+  border-bottom: 1px solid;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 0.3rem;
+  align-content: center;
+  
+}
+
+.char{
+  border-bottom: 1px solid;
+  margin: 0.3rem;
+}
+
+.charHolder {
+  border-bottom: 1px solid;
+  margin: 0.3rem;
+}
+
+.char:nth-child(3n+3) {
+  border-bottom: 1px solid;
+  margin: 0.4rem;
+  animation-name: disappearAnimation;
+  animation-duration: 1500ms;
+  animation-fill-mode: forwards;
+}
+
+.inputSpans {
+  font-size: var(--size-20);
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
